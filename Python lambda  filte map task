@@ -1,0 +1,13 @@
+people = [
+    {"name": "sanika", "age": 17},
+    {"name": "prathamesh", "age": 22},
+    {"name": "mrumayee", "age": 18},
+    {"name": "bharthi", "age": 15},
+    {"name": "viraj", "age": 30}
+]
+
+adults = filter(lambda person: person["age"] >= 18, people)
+
+names = list(map(lambda person: person["name"], adults))
+
+print(names)
