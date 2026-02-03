@@ -1,0 +1,7 @@
+from datetime import datetime
+
+extract_date = lambda d: (d.year, d.month, d.day)
+
+today = datetime(2026, 2, 3)
+
+print(extract_date(today))
