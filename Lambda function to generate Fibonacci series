@@ -1,0 +1,6 @@
+fibonacci = lambda n: (
+    [0, 1] if n <= 2 else
+    (lambda f=[0, 1]: [f.append(f[-1] + f[-2]) or f for _ in range(n-2)][-1])()
+)
+
+print(fibonacci(7))
